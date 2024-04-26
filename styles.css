@@ -110,6 +110,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 800px;
     transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
 
 }
@@ -143,7 +145,11 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    /* translate: 0px -60px; */
+    gap: 50px;
 }
 
 .credits {

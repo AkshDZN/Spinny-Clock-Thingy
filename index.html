@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="hours">
-        <div class="pill" onclick="fliph1()">
+        <div class="pill" onclick="fliph1(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
@@ -28,13 +28,13 @@
             </div>
         </div>
     
-        <div class="pill">
+        <div class="pill" onclick="fliph2(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
             </div>
     
-            <div class="numbers">
+            <div class="numbers" id="hour2">
                 <div class="text">0</div>
                 <div class="text">1</div>
                 <div class="text">2</div>
@@ -50,13 +50,13 @@
     </div>
 
     <div class="minutes">
-        <div class="pill">
+        <div class="pill" onclick="flipm1(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
             </div>
     
-            <div class="numbers">
+            <div class="numbers" id="min1">
                 <div class="text">0</div>
                 <div class="text">1</div>
                 <div class="text">2</div>
@@ -70,13 +70,13 @@
             </div>
         </div>
     
-        <div class="pill">
+        <div class="pill" onclick="flipm2(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
             </div>
     
-            <div class="numbers">
+            <div class="numbers" id="min2">
                 <div class="text">0</div>
                 <div class="text">1</div>
                 <div class="text">2</div>
@@ -92,13 +92,13 @@
     </div>
 
     <div class="seconds">
-        <div class="pill">
+        <div class="pill" onclick="flips1(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
             </div>
     
-            <div class="numbers">
+            <div class="numbers" id="sec1">
                 <div class="text">0</div>
                 <div class="text">1</div>
                 <div class="text">2</div>
@@ -112,13 +112,13 @@
             </div>
         </div>
     
-        <div class="pill">
+        <div class="pill" onclick="flips2(0)">
             <div class="pillshape">
                 <div class="numberbxstroke"></div>
                 <div class="numberbx"></div>
             </div>
     
-            <div class="numbers">
+            <div class="numbers" id="sec2">
                 <div class="text">0</div>
                 <div class="text">1</div>
                 <div class="text">2</div>
@@ -133,9 +133,12 @@
         </div>
     </div>
 
-    <div class="ampmbx">
+    <div class="ampmbx" onclick="flipampm(0)">
         <div class="ampmstroke"></div>
-        <div class="ampmtext">AM</div>
+        <div class="ampmtext" id="ampm">
+            <div class="text">AM</div>
+            <div class="text">PM</div>
+        </div>
         <div class="ampm"></div>
     </div>
 

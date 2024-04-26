@@ -31,6 +31,7 @@ function themeDark() {
 // switcher 
 
 const h1 = document.getElementById("hour1");
+const h2 = document.getElementById("hour2");
 
 // h1.style.translate = "0px 0px"; //0
 // h1.style.translate = "0px -100px"; //1
@@ -66,3 +67,159 @@ function fliph1(no) {
         h1.style.translate = "0px -960px";
     }
 }
+
+function fliph2(no) {
+    if (no === 0) {
+        h2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        h2.style.translate = "0px -100px";
+    } else if (no === 2) {
+        h2.style.translate = "0px -210px";
+    } else if (no === 3) {
+        h2.style.translate = "0px -320px";
+    } else if (no === 4) {
+        h2.style.translate = "0px -428px";
+    } else if (no === 5) {
+        h2.style.translate = "0px -535px";
+    } else if (no === 6) {
+        h2.style.translate = "0px -640px";
+    } else if (no === 7) {
+        h2.style.translate = "0px -750px";
+    } else if (no === 8) {
+        h2.style.translate = "0px -855px";
+    } else if (no === 9) {
+        h2.style.translate = "0px -960px";
+    }
+}
+
+const m1 = document.getElementById("min1");
+const m2 = document.getElementById("min2");
+
+function flipm1(no) {
+    if (no === 0) {
+        m1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        m1.style.translate = "0px -100px";
+    } else if (no === 2) {
+        m1.style.translate = "0px -210px";
+    } else if (no === 3) {
+        m1.style.translate = "0px -320px";
+    } else if (no === 4) {
+        m1.style.translate = "0px -428px";
+    } else if (no === 5) {
+        m1.style.translate = "0px -535px";
+    } else if (no === 6) {
+        m1.style.translate = "0px -640px";
+    } else if (no === 7) {
+        m1.style.translate = "0px -750px";
+    } else if (no === 8) {
+        m1.style.translate = "0px -855px";
+    } else if (no === 9) {
+        m1.style.translate = "0px -960px";
+    }
+}
+
+function flipm2(no) {
+    if (no === 0) {
+        m2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        m2.style.translate = "0px -100px";
+    } else if (no === 2) {
+        m2.style.translate = "0px -210px";
+    } else if (no === 3) {
+        m2.style.translate = "0px -320px";
+    } else if (no === 4) {
+        m2.style.translate = "0px -428px";
+    } else if (no === 5) {
+        m2.style.translate = "0px -535px";
+    } else if (no === 6) {
+        m2.style.translate = "0px -640px";
+    } else if (no === 7) {
+        m2.style.translate = "0px -750px";
+    } else if (no === 8) {
+        m2.style.translate = "0px -855px";
+    } else if (no === 9) {
+        m2.style.translate = "0px -960px";
+    }
+}
+
+const s1 = document.getElementById("sec1");
+const s2 = document.getElementById("sec2");
+
+function flips1(no) {
+    if (no === 0) {
+        s1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        s1.style.translate = "0px -100px";
+    } else if (no === 2) {
+        s1.style.translate = "0px -210px";
+    } else if (no === 3) {
+        s1.style.translate = "0px -320px";
+    } else if (no === 4) {
+        s1.style.translate = "0px -428px";
+    } else if (no === 5) {
+        s1.style.translate = "0px -535px";
+    } else if (no === 6) {
+        s1.style.translate = "0px -640px";
+    } else if (no === 7) {
+        s1.style.translate = "0px -750px";
+    } else if (no === 8) {
+        s1.style.translate = "0px -855px";
+    } else if (no === 9) {
+        s1.style.translate = "0px -960px";
+    }
+}
+
+function flips2(no) {
+    if (no === 0) {
+        s2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        s2.style.translate = "0px -100px";
+    } else if (no === 2) {
+        s2.style.translate = "0px -210px";
+    } else if (no === 3) {
+        s2.style.translate = "0px -320px";
+    } else if (no === 4) {
+        s2.style.translate = "0px -428px";
+    } else if (no === 5) {
+        s2.style.translate = "0px -535px";
+    } else if (no === 6) {
+        s2.style.translate = "0px -640px";
+    } else if (no === 7) {
+        s2.style.translate = "0px -750px";
+    } else if (no === 8) {
+        s2.style.translate = "0px -855px";
+    } else if (no === 9) {
+        s2.style.translate = "0px -960px";
+    }
+}
+
+const ampm = document.getElementById("ampm");
+
+function flipampm(no) {
+    if (no === 0) {
+        ampm.style.translate = "0px 0px";
+    } else if (no === 1) {
+        ampm.style.translate = "0px -125px";
+    }
+}
+
+// time and parser 
+
+let currentTime = new Date();
+let hours = currentTime.getHours();
+let minutes = currentTime.getMinutes();
+
+let hours12 = hours % 12;
+
+let hoursString = hours12 < 10 ? '0' + hours12 : hours12.toString();
+
+let minutesString = minutes < 10 ? '0' + minutes : minutes.toString();
+
+let amPm = hours < 12 ? 'AM' : 'PM';
+
+let timeString = hoursString + ':' + minutesString + ' ' + amPm;
+console.log(timeString);
+
+
+
