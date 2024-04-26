@@ -16,17 +16,17 @@ function themeDark() {
     root.style.setProperty('--credits', 'white');
 }
 
-// let themeState = 0;
+let themeState = 0;
 
-// document.body.addEventListener('click', function() {
-//     if (themeState === 0) {
-//         themeLight();
-//         themeState = 1;
-//     } else if (themeState === 1) {
-//         themeDark();
-//         themeState = 0;
-//     }
-// });
+document.body.addEventListener('click', function() {
+    if (themeState === 0) {
+        themeLight();
+        themeState = 1;
+    } else if (themeState === 1) {
+        themeDark();
+        themeState = 0;
+    }
+});
 
 // switcher 
 
@@ -206,20 +206,48 @@ function flipampm(no) {
 
 // time and parser 
 
-let currentTime = new Date();
-let hours = currentTime.getHours();
-let minutes = currentTime.getMinutes();
+setInterval(() => {
+    let currentTime = new Date();
 
-let hours12 = hours % 12;
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+    
+    let hours12 = hours % 12;
+    
+    let hoursString = hours12 < 10 ? '0' + hours12 : hours12.toString();
+    
+    let minutesString = minutes < 10 ? '0' + minutes : minutes.toString();
+    
+    let secondsString = seconds < 10 ? '0' + seconds : seconds.toString();
+    
+    let amPm = hours < 12 ? '0' : '1';
+    
+    let timeString = hoursString + ':' + minutesString + ':' + secondsString + (amPm ? ' ' + amPm : '');
+    
 
-let hoursString = hours12 < 10 ? '0' + hours12 : hours12.toString();
+    let finalh1 = parseInt(timeString.charAt(0));
+    let finalh2 = parseInt(timeString.charAt(1));
 
-let minutesString = minutes < 10 ? '0' + minutes : minutes.toString();
+    fliph1(finalh1);
+    fliph2(finalh2);
 
-let amPm = hours < 12 ? 'AM' : 'PM';
+    let finalm1 = parseInt(timeString.charAt(3));
+    let finalm2 = parseInt(timeString.charAt(4));
 
-let timeString = hoursString + ':' + minutesString + ' ' + amPm;
-console.log(timeString);
+    flipm1(finalm1);
+    flipm2(finalm2);
+
+    let finals1 = parseInt(timeString.charAt(6));
+    let finals2 = parseInt(timeString.charAt(7));
+
+    flips1(finals1);
+    flips2(finals2);
+
+    let finalampm = parseInt(timeString.charAt(9));
+
+    flipampm(finalampm);
+}, 1000);
 
 
 
