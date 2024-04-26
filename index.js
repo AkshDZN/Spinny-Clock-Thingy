@@ -16,14 +16,53 @@ function themeDark() {
     root.style.setProperty('--credits', 'white');
 }
 
-let themeState = 0;
+// let themeState = 0;
 
-document.addEventListener('click', function() {
-    if (themeState === 0) {
-        themeLight();
-        themeState = 1;
-    } else if (themeState === 1) {
-        themeDark();
-        themeState = 0;
+// document.body.addEventListener('click', function() {
+//     if (themeState === 0) {
+//         themeLight();
+//         themeState = 1;
+//     } else if (themeState === 1) {
+//         themeDark();
+//         themeState = 0;
+//     }
+// });
+
+// switcher 
+
+const h1 = document.getElementById("hour1");
+
+// h1.style.translate = "0px 0px"; //0
+// h1.style.translate = "0px -100px"; //1
+// h1.style.translate = "0px -210px"; //2
+// h1.style.translate = "0px -320px"; //3
+// h1.style.translate = "0px -428px"; //4
+// h1.style.translate = "0px -535px"; //5
+// h1.style.translate = "0px -640px"; //6
+// h1.style.translate = "0px -750px"; //7
+// h1.style.translate = "0px -855px"; //8
+// h1.style.translate = "0px -960px"; //9
+
+function fliph1(no) {
+    if (no === 0) {
+        h1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        h1.style.translate = "0px -100px";
+    } else if (no === 2) {
+        h1.style.translate = "0px -210px";
+    } else if (no === 3) {
+        h1.style.translate = "0px -320px";
+    } else if (no === 4) {
+        h1.style.translate = "0px -428px";
+    } else if (no === 5) {
+        h1.style.translate = "0px -535px";
+    } else if (no === 6) {
+        h1.style.translate = "0px -640px";
+    } else if (no === 7) {
+        h1.style.translate = "0px -750px";
+    } else if (no === 8) {
+        h1.style.translate = "0px -855px";
+    } else if (no === 9) {
+        h1.style.translate = "0px -960px";
     }
-});
+}
