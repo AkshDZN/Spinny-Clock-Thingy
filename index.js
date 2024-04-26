@@ -68,6 +68,31 @@ function fliph1(no) {
     }
 }
 
+function fliph1mob(no) {
+    if (no === 0) {
+        h1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        h1.style.translate = "0px -27px";
+    } else if (no === 2) {
+        h1.style.translate = "0px -54px";
+    } else if (no === 3) {
+        h1.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        h1.style.translate = "0px -107px";
+    } else if (no === 5) {
+        h1.style.translate = "0px -136px";
+    } else if (no === 6) {
+        h1.style.translate = "0px -163px";
+    } else if (no === 7) {
+        h1.style.translate = "0px -191px";
+    } else if (no === 8) {
+        h1.style.translate = "0px -218px";
+    } else if (no === 9) {
+        h1.style.translate = "0px -244px";
+    }
+}
+
+
 function fliph2(no) {
     if (no === 0) {
         h2.style.translate = "0px 0px";
@@ -89,6 +114,30 @@ function fliph2(no) {
         h2.style.translate = "0px -855px";
     } else if (no === 9) {
         h2.style.translate = "0px -960px";
+    }
+}
+
+function fliph2mob(no) {
+    if (no === 0) {
+        h2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        h2.style.translate = "0px -27px";
+    } else if (no === 2) {
+        h2.style.translate = "0px -54px";
+    } else if (no === 3) {
+        h2.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        h2.style.translate = "0px -107px";
+    } else if (no === 5) {
+        h2.style.translate = "0px -136px";
+    } else if (no === 6) {
+        h2.style.translate = "0px -163px";
+    } else if (no === 7) {
+        h2.style.translate = "0px -191px";
+    } else if (no === 8) {
+        h2.style.translate = "0px -218px";
+    } else if (no === 9) {
+        h2.style.translate = "0px -244px";
     }
 }
 
@@ -119,6 +168,30 @@ function flipm1(no) {
     }
 }
 
+function flipm1mob(no) {
+    if (no === 0) {
+        m1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        m1.style.translate = "0px -27px";
+    } else if (no === 2) {
+        m1.style.translate = "0px -54px";
+    } else if (no === 3) {
+        m1.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        m1.style.translate = "0px -107px";
+    } else if (no === 5) {
+        m1.style.translate = "0px -136px";
+    } else if (no === 6) {
+        m1.style.translate = "0px -163px";
+    } else if (no === 7) {
+        m1.style.translate = "0px -191px";
+    } else if (no === 8) {
+        m1.style.translate = "0px -218px";
+    } else if (no === 9) {
+        m1.style.translate = "0px -244px";
+    }
+}
+
 function flipm2(no) {
     if (no === 0) {
         m2.style.translate = "0px 0px";
@@ -140,6 +213,30 @@ function flipm2(no) {
         m2.style.translate = "0px -855px";
     } else if (no === 9) {
         m2.style.translate = "0px -960px";
+    }
+}
+
+function flipm2mob(no) {
+    if (no === 0) {
+        m2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        m2.style.translate = "0px -27px";
+    } else if (no === 2) {
+        m2.style.translate = "0px -54px";
+    } else if (no === 3) {
+        m2.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        m2.style.translate = "0px -107px";
+    } else if (no === 5) {
+        m2.style.translate = "0px -136px";
+    } else if (no === 6) {
+        m2.style.translate = "0px -163px";
+    } else if (no === 7) {
+        m2.style.translate = "0px -191px";
+    } else if (no === 8) {
+        m2.style.translate = "0px -218px";
+    } else if (no === 9) {
+        m2.style.translate = "0px -244px";
     }
 }
 
@@ -170,6 +267,30 @@ function flips1(no) {
     }
 }
 
+function flips1mob(no) {
+    if (no === 0) {
+        s1.style.translate = "0px 0px";
+    } else if (no === 1) {
+        s1.style.translate = "0px -27px";
+    } else if (no === 2) {
+        s1.style.translate = "0px -54px";
+    } else if (no === 3) {
+        s1.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        s1.style.translate = "0px -107px";
+    } else if (no === 5) {
+        s1.style.translate = "0px -136px";
+    } else if (no === 6) {
+        s1.style.translate = "0px -163px";
+    } else if (no === 7) {
+        s1.style.translate = "0px -191px";
+    } else if (no === 8) {
+        s1.style.translate = "0px -218px";
+    } else if (no === 9) {
+        s1.style.translate = "0px -244px";
+    }
+}
+
 function flips2(no) {
     if (no === 0) {
         s2.style.translate = "0px 0px";
@@ -194,6 +315,30 @@ function flips2(no) {
     }
 }
 
+function flips2mob(no) {
+    if (no === 0) {
+        s2.style.translate = "0px 0px";
+    } else if (no === 1) {
+        s2.style.translate = "0px -27px";
+    } else if (no === 2) {
+        s2.style.translate = "0px -54px";
+    } else if (no === 3) {
+        s2.style.translate = "0px -82px"; 
+    } else if (no === 4) {
+        s2.style.translate = "0px -107px";
+    } else if (no === 5) {
+        s2.style.translate = "0px -136px";
+    } else if (no === 6) {
+        s2.style.translate = "0px -163px";
+    } else if (no === 7) {
+        s2.style.translate = "0px -191px";
+    } else if (no === 8) {
+        s2.style.translate = "0px -218px";
+    } else if (no === 9) {
+        s2.style.translate = "0px -244px";
+    }
+}
+
 const ampm = document.getElementById("ampm");
 
 function flipampm(no) {
@@ -201,6 +346,14 @@ function flipampm(no) {
         ampm.style.translate = "0px 0px";
     } else if (no === 1) {
         ampm.style.translate = "0px -125px";
+    }
+}
+
+function flipampmmob(no) {
+    if (no === 0) {
+        ampm.style.translate = "0px 0px";
+    } else if (no === 1) {
+        ampm.style.translate = "0px -31px";
     }
 }
 
@@ -229,24 +382,38 @@ setInterval(() => {
     let finalh1 = parseInt(timeString.charAt(0));
     let finalh2 = parseInt(timeString.charAt(1));
 
-    fliph1(finalh1);
-    fliph2(finalh2);
-
     let finalm1 = parseInt(timeString.charAt(3));
     let finalm2 = parseInt(timeString.charAt(4));
-
-    flipm1(finalm1);
-    flipm2(finalm2);
 
     let finals1 = parseInt(timeString.charAt(6));
     let finals2 = parseInt(timeString.charAt(7));
 
-    flips1(finals1);
-    flips2(finals2);
-
     let finalampm = parseInt(timeString.charAt(9));
 
-    flipampm(finalampm);
+    if (window.innerWidth <= 935) {
+        fliph1mob(finalh1);
+        fliph2mob(finalh2);
+    
+        flipm1mob(finalm1);
+        flipm2mob(finalm2);
+    
+        flips1mob(finals1);
+        flips2mob(finals2);
+        
+        flipampmmob(finalampm);
+    } else {
+        fliph1(finalh1);
+        fliph2(finalh2);
+    
+        flipm1(finalm1);
+        flipm2(finalm2);
+    
+        flips1(finals1);
+        flips2(finals2);
+        
+        flipampm(finalampm);
+    }
+
 }, 1000);
 
 

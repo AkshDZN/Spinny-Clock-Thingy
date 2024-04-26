@@ -163,3 +163,158 @@ body {
     transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
 
 }
+
+@media (max-width : 935px) {
+    body {
+        background-color: var(--bg);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        gap: 13px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    }
+    
+    .text {
+        background: var(--text);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    }
+    
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Pixelify Sans';
+        font-size: 1rem;
+        text-align: center;
+        gap: 8px;
+        margin-top: 8px;
+        /* translate: 0px -100px; */
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .numberbx {
+        width: 26px;
+        height: 36px;
+        background: var(--pill);
+        border-radius: 500px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .numberbxstroke {
+        width: 27px;
+        height: 37px;
+        background: var(--pillStroke);
+        border-radius: 500px;
+        position: absolute;
+        z-index: -500;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .pillshape {
+        display: flex;
+        width: 27px;
+        height: 37px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -300;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .pill {
+        width: 27px;
+        height: 37px;
+        overflow: hidden;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .hours {
+        display: flex;
+        gap: 4px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .minutes {
+        display: flex;
+        gap: 4px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .seconds {
+        display: flex;
+        gap: 4px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .ampmbx {
+        width: 37px;
+        height: 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 800px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .ampm {
+        position: absolute;
+        z-index: -300;
+        width: 36px;
+        height: 36px;
+        background: var(--pill);
+        border-radius: 500px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .ampmstroke {
+        width: 37px;
+        height: 37px;
+        background: var(--pillStroke);
+        border-radius: 500px;
+        position: absolute;
+        z-index: -500;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+    
+    .ampmtext {
+        font-family: 'Pixelify Sans';
+        font-size: 1rem;
+        background: var(--text);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        /* translate: 0px -60px; */
+        gap: 13px;
+    }
+    
+    .credits {
+        font-family: 'Pixelify Sans';
+        font-size: 0.75rem;
+        color: var(--credits);
+        opacity: 20%;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 32px;
+        transition: all cubic-bezier(.26,.06,.39,.99) 600ms;
+    
+    }
+}
