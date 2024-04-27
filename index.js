@@ -357,9 +357,19 @@ function flipampmmob(no) {
     }
 }
 
+// audio
+const tickSound = new Audio('sounds/tick.mp3');
+
+function playAudio() {
+    tickSound.currentTime = 0;
+    tickSound.play();
+  }
+
 // time and parser 
 
 setInterval(() => {
+    playAudio();
+
     let currentTime = new Date();
 
     let hours = currentTime.getHours();
@@ -414,7 +424,6 @@ setInterval(() => {
         flipampm(finalampm);
     }
 
+
 }, 1000);
-
-
 
